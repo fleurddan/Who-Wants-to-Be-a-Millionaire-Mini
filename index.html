@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kim Milyoner Olmak İster - Mini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <header>
+                <h1>Who Wants to Be a Millionaire? — Mini</h1>
+                <div class="status">Question <span id="qIndex">1</span>/10 — Time: <span id="timer" class="timer">30</span>s</div>
+            </header>
+
+            <div class="question">
+                <h2 id="questionText">Loading...</h2>
+                <div style="margin-top:10px" id="hint" class="note"></div>
+            </div>
+
+            <div class="answers" id="answers"></div>
+
+            <div class="lifelines" id="lifelinesDiv" style="margin-top:12px">
+                <div id="lifeline5050" class="lifeline" title="50:50 — removes two wrong answers">50:50</div>
+                <div id="lifelinePhone" class="lifeline" title="Phone — 'friend' gives a guess">Phone</div>
+                <div id="lifelineAudience" class="lifeline" title="Audience — shows instant vote distribution">Audience</div>
+            </div>
+
+            <div class="controls">
+                <button id="walkAway" class="btn secondary">Walk Away</button>
+                <button id="nextBtn" class="btn" style="margin-left:auto;display:none">Next</button>
+                <button id="startBtn" class="btn">Start Game</button>
+            </div>
+
+            <div class="footer">
+                <div class="note">Rules: 30 seconds per question. Wrong answer drops you to safe step (5th question safe). 3 lifelines available once each.</div>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+                <div class="big-prize" id="currentPrize">$0</div>
+                <div class="note">Safe step: Question 5</div>
+            </div>
+
+            <div class="ladder" id="ladder"></div>
+
+            <div class="note" style="margin-top:12px">Hint: Phone lifeline has 70% chance to suggest correct answer.</div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
