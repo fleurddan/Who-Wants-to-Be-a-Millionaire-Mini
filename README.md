@@ -5,6 +5,9 @@ A front-end quiz game inspired by *Who Wants to Be a Millionaire*, developed usi
 ## Overview
 This project demonstrates the implementation of a state-driven quiz game, focusing on core JavaScript logic, DOM manipulation, and controlled user interactions without relying on external libraries.
 
+## Easy Access
+https://fleurddan.github.io/Who-Wants-to-Be-a-Millionaire-Mini/
+
 ## Features
 - Multiple-choice question system  
 - Prize ladder and scoring logic  
